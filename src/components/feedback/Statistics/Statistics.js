@@ -1,6 +1,6 @@
 import React from "react";
-import Notification from "./Notification";
-import s from "./Feedback.module.css";
+import Notification from "../Notification/Notification";
+import s from "./Statistics.module.css";
 
 export default function Statistics({
     good,

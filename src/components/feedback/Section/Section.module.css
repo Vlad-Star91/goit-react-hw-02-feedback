@@ -1,0 +1,10 @@
+.containerHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading {
+  margin-bottom: 0;
+}

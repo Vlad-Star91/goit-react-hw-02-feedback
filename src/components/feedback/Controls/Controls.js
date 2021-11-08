@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import s from "./Feedback.module.css";
+import s from "./Controls.module.css";
 
 export default function Controls({ options, onLeaveFeedback }) {
     const btnFeedback = Object.keys(options);

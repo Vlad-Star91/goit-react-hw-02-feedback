@@ -1,0 +1,27 @@
+ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  margin-bottom: 15px;
+}
+
+.good {
+  color: rgb(0, 182, 61);
+}
+.neutral {
+  color: rgb(87, 87, 87);
+}
+.bad {
+  color: rgb(207, 0, 0);
+}
+.total {
+  color: rgb(0, 74, 212);
+}
+.positivePercentage {
+  color: rgb(87, 87, 87);
+}

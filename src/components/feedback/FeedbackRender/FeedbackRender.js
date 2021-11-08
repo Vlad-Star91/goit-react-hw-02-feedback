@@ -1,9 +1,9 @@
 import React from 'react';
-import Section from "./Section";
-import Controls from "./Controls";
-import Statistics from "./Statistics";
+import Section from "../Section/Section";
+import Controls from "../Controls/Controls";
+import Statistics from "../Statistics/Statistics";
 
-import s from "./Feedback.module.css";
+import s from "./FeedbackRender.module.css";
 
 export default class Feedback extends React.Component {
     static defaultProps = {
@@ -43,7 +43,7 @@ export default class Feedback extends React.Component {
                     <Statistics
                         good={this.state.good}
                         neutral={this.state.neutral}
-                        bad={this.state.neutral}
+                        bad={this.state.bad}
                         total={this.countTotalFeedBack()}
                         positivePercentage={this.countPositiveFeedbackPercentage()} />
                 </Section>
