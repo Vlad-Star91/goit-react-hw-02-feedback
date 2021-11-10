@@ -5,6 +5,8 @@ import Statistics from "../Statistics/Statistics";
 
 import s from "./FeedbackRender.module.css";
 
+
+
 export default class Feedback extends React.Component {
     static defaultProps = {
         initialValue: 0,
@@ -26,7 +28,8 @@ export default class Feedback extends React.Component {
     };
 
     countTotalFeedBack = () => {
-        return this.state.good + this.state.bad + this.state.neutral;
+        const { good, bad, neutral } = this.state;
+        return good + bad + neutral;
     };
 
     countPositiveFeedbackPercentage = () => {
@@ -34,6 +37,7 @@ export default class Feedback extends React.Component {
     };
 
     render() {
+        const { good, bad, neutral } = this.state;
         return (
             <div className={s.container}>
                 <Section title="Please leave feedback">
@@ -41,9 +45,9 @@ export default class Feedback extends React.Component {
                 </Section>
                 <Section title="Statistics">
                     <Statistics
-                        good={this.state.good}
-                        neutral={this.state.neutral}
-                        bad={this.state.bad}
+                        good={good}
+                        neutral={neutral}
+                        bad={bad}
                         total={this.countTotalFeedBack()}
                         positivePercentage={this.countPositiveFeedbackPercentage()} />
                 </Section>

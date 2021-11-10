@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Feedback from "./components/feedback/FeedbackRender/FeedbackRender"
+import FeedbackRender from "./components/feedback/FeedbackRender/FeedbackRender"
 
 export default function App() {
-  return (<Feedback />)
+  return (<FeedbackRender />)
 }
